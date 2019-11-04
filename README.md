@@ -10,6 +10,7 @@ The main idea of this project is to demonstrate how to take advantages from the 
 * [Spring Boot 2](https://spring.io/projects/spring-boot)
 * [Spock Framework](https://github.com/spockframework)
 * [Gradle Buil Tool](https://gradle.org/)
+* [Jacoco Code Coverage](https://www.jacoco.org/jacoco)
 * [Micronaut Http Client](https://guides.micronaut.io/micronaut-http-client-groovy/guide/index.html#tests)
 * [JJWT Library](https://github.com/jwtk/jjwt)
 
@@ -27,23 +28,29 @@ The main idea of this project is to demonstrate how to take advantages from the 
 
 ## Command Line
 
-To start the application :
-```
-./gradlew bootRun
-```
-
-To launch unit tests :
+To launch unit tests:
 ```
 ./gradlew test
 ```
 
-To launch integration tests :
+To launch integration tests:
 ```
 ./gradlew integrationTest
 ```
 
-To launch all the tests :
+To launch all the tests:
 ```
 ./gradlew check
 ```
 
+To review the code coverage: 
+
+```
+./gradlew build jacocoTestReport
+open build/reports/jacoco/test/html/index.html
+```
+
+To start the application:
+```
+./gradlew bootRun
+```

@@ -2,12 +2,13 @@ plugins {
 	id 'groovy'
 	id 'org.springframework.boot' version '2.2.0.RELEASE'
 	id 'org.unbroken-dome.test-sets' version '2.2.1'
+	id 'jacoco'
 }
 
 apply plugin: 'idea'
 apply plugin: 'io.spring.dependency-management'
 
-group = 'token-access-test-ex'
+group = 'spring-boot-spock-example'
 version = '1.0.1'
 sourceCompatibility = '1.8'
 
